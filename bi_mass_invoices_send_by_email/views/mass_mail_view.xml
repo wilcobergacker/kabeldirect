@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Wizard for invoice -->
+        
+        <act_window
+            id="action_mass_invoice"
+            name="Mass Invoices Email Send"
+            src_model="account.invoice"
+            res_model="wiz.mass.invoice"
+            view_type="form"
+            view_mode="form"
+            key2="client_action_multi" target="new"
+            />
+
+        <record id="view_wizard_mass_invoice_email_send_form" model="ir.ui.view">
+            <field name="name">wizard.mass.invoice.form</field>
+            <field name="model">wiz.mass.invoice</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Mass Invoice Email Send">
+                
+                		<b>Do You want to send Invoice to customer by email?</b>
+                    <footer>
+                        <button string="Send" type="object" name="mass_invoice_email_send"/>
+                         Or 
+                        <button string="Cancel" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        
+    </data>
+</openerp>

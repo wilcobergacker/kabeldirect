@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_invoice_confirmation" model="ir.ui.view">
+            <field name="name">invoice.confirmation.view</field>
+            <field name="model">invoice.confirmation</field>
+            <field name="arch" type="xml">
+                <form string="Invoice Confirmation">
+                    <group>
+                        <p class="text-muted">There is no attachment found. Do you want to create invoice anyhow?</p>
+                    </group>
+                    <footer>
+                        <button name="redirect_to_invoice" string="Yes" type="object" class="oe_highlight"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_view_invoice_confirmation" model="ir.actions.act_window">
+            <field name="name">Invoice Confirmation</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">invoice.confirmation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_invoice_confirmation"/>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

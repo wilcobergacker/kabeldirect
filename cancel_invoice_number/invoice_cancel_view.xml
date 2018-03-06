@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+<!-- ###################### Show invoice cancel number ########################  -->
+
+
+        <record id="invoice_cancel_number_tree" model="ir.ui.view">
+            <field name="name">account.invoice.tree cancel</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_tree" />
+            <field name="arch" type="xml">
+                <field name="number" position="replace">
+                    <field name="number" invisible="1"/>
+                    <field name="move_name" string="N°"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="invoice_cancel_number_supplier_tree" model="ir.ui.view">
+            <field name="name">account.invoice.tree cancel</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_tree" />
+            <field name="arch" type="xml">
+                <field name="number" position="replace">
+                    <field name="number" invisible="1"/>
+                    <field name="move_name" string="N°"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="invoice_cancel_number_customer_form" model="ir.ui.view">
+            <field name="name">account.invoice.form cancel</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form" />
+            <field name="arch" type="xml">
+                <field name="move_name" position="replace"/>
+                <field name="number" position="replace"/>
+                <xpath expr="//h1" position="after">
+                    <div class="oe_title">
+                        <h1>
+                            <field name="move_name" string="N°" readonly="1" class="oe_inline"/>
+                        </h1>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="invoice_cancel_number_supplier_form" model="ir.ui.view">
+            <field name="name">account.invoice.supplier.form cancel</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form" />
+            <field name="arch" type="xml">
+                <field name="move_name" position="replace"/>
+                <field name="number" position="after">
+                    <field name="move_name" string="N°" readonly="1" class="oe_inline"/>
+                </field>
+                 <field name="number" position="replace"/>
+            </field>
+        </record>
+
+    </data>
+</openerp>

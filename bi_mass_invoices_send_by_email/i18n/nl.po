@@ -1,0 +1,94 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bi_mass_invoices_send_by_email
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-15 10:07+0000\n"
+"PO-Revision-Date: 2017-11-15 11:23+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#. module: bi_mass_invoices_send_by_email
+#: code:addons/bi_mass_invoices_send_by_email/models/account_invoice.py:39
+#, python-format
+msgid "%s customer has no email id please enter email address"
+msgstr "%s klant heeft geen e-mail adres ingesteld, stel deze eerst in."
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.ui.view,arch_db:bi_mass_invoices_send_by_email.view_wizard_mass_invoice_email_send_form
+msgid "<b>Do You want to send Invoice to customer by email?</b>"
+msgstr "<b>Wilt u deze facturen er e-mail versturen?</b>"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.ui.view,arch_db:bi_mass_invoices_send_by_email.view_wizard_mass_invoice_email_send_form
+msgid "Cancel"
+msgstr "Annuleer"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.model.fields,field_description:bi_mass_invoices_send_by_email.field_wiz_mass_invoice_create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.model.fields,field_description:bi_mass_invoices_send_by_email.field_wiz_mass_invoice_create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.model.fields,field_description:bi_mass_invoices_send_by_email.field_wiz_mass_invoice_display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.model.fields,field_description:bi_mass_invoices_send_by_email.field_wiz_mass_invoice_id
+msgid "ID"
+msgstr "ID"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.model.fields,field_description:bi_mass_invoices_send_by_email.field_wiz_mass_invoice___last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.model.fields,field_description:bi_mass_invoices_send_by_email.field_wiz_mass_invoice_write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.model.fields,field_description:bi_mass_invoices_send_by_email.field_wiz_mass_invoice_write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.ui.view,arch_db:bi_mass_invoices_send_by_email.view_wizard_mass_invoice_email_send_form
+msgid "Mass Invoice Email Send"
+msgstr "Bulk factuur verzenden"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.actions.act_window,name:bi_mass_invoices_send_by_email.action_mass_invoice
+msgid "Mass Invoices Email Send"
+msgstr "Bulk facturen verzenden"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.ui.view,arch_db:bi_mass_invoices_send_by_email.view_wizard_mass_invoice_email_send_form
+msgid "Or"
+msgstr "Or"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.ui.view,arch_db:bi_mass_invoices_send_by_email.view_wizard_mass_invoice_email_send_form
+msgid "Send"
+msgstr "Verzenden"
+
+#. module: bi_mass_invoices_send_by_email
+#: model:ir.model,name:bi_mass_invoices_send_by_email.model_wiz_mass_invoice
+msgid "wiz.mass.invoice"
+msgstr "wiz.mass.invoice"

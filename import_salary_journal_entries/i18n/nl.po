@@ -1,0 +1,328 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* import_salary_journal_entries
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.saas~13e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-29 06:12+0000\n"
+"PO-Revision-Date: 2016-09-29 08:16+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: nl\n"
+"X-Generator: Poedit 1.8.8\n"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,format_amount:0
+msgid "-9,99"
+msgstr "-9,99"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,format_amount:0
+msgid "-9.99"
+msgstr "-9.99"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,format_account:0
+msgid "9999.99"
+msgstr "9999.99"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_pos_account
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_line_account_id
+msgid "Account"
+msgstr "Rekening"
+
+#. module: import_salary_journal_entries
+#: code:addons/import_salary_journal_entries/wizard/import_ljp.py:111
+#, python-format
+msgid "Account [%s] is not valid!"
+msgstr "Grootboek [%s] is niet correct!"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_pos_amount
+msgid "Amount"
+msgstr "Bedrag"
+
+#. module: import_salary_journal_entries
+#: code:addons/import_salary_journal_entries/wizard/import_ljp.py:121
+#, python-format
+msgid "An error occured while importing the entries."
+msgstr "Een fout is opgetreden bij het importeren van de boekingen."
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_company_id
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_company_id
+msgid "Company"
+msgstr "Bedijf"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_create_uid
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_create_uid
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_line_create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_create_date
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_create_date
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_line_create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_line_credit
+msgid "Credit"
+msgstr "Credit"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_line_debit
+msgid "Debit"
+msgstr "Debet"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_delimiter
+msgid "Delimiter"
+msgstr "Delimiter"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_pos_descr
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_line_description
+msgid "Description"
+msgstr "Omschrijving"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_display_name
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_display_name
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_line_display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp,state:0
+msgid "Draft"
+msgstr "Concept"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_booking_date
+msgid "Entry Date"
+msgstr "Boekdatum"
+
+#. module: import_salary_journal_entries
+#: code:addons/import_salary_journal_entries/wizard/import_ljp.py:147
+#, python-format
+msgid "Error while importing! Please check if you used the correct format."
+msgstr "Fout bij importeren! Controleer of u het juiste formaat heeft gebruikt."
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,pos_account:0
+#: selection:import.ljp.format,pos_amount:0
+#: selection:import.ljp.format,pos_descr:0
+msgid "Field 1"
+msgstr "Veld 1"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,pos_account:0
+#: selection:import.ljp.format,pos_amount:0
+#: selection:import.ljp.format,pos_descr:0
+msgid "Field 10"
+msgstr "Veld 10"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,pos_account:0
+#: selection:import.ljp.format,pos_amount:0
+#: selection:import.ljp.format,pos_descr:0
+msgid "Field 2"
+msgstr "Veld 2"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,pos_account:0
+#: selection:import.ljp.format,pos_amount:0
+#: selection:import.ljp.format,pos_descr:0
+msgid "Field 3"
+msgstr "Veld 3"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,pos_account:0
+#: selection:import.ljp.format,pos_amount:0
+#: selection:import.ljp.format,pos_descr:0
+msgid "Field 4"
+msgstr "Veld 4"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,pos_account:0
+#: selection:import.ljp.format,pos_amount:0
+#: selection:import.ljp.format,pos_descr:0
+msgid "Field 5"
+msgstr "Veld 5"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,pos_account:0
+#: selection:import.ljp.format,pos_amount:0
+#: selection:import.ljp.format,pos_descr:0
+msgid "Field 6"
+msgstr "Veld 6"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,pos_account:0
+#: selection:import.ljp.format,pos_amount:0
+#: selection:import.ljp.format,pos_descr:0
+msgid "Field 7"
+msgstr "Veld 7"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,pos_account:0
+#: selection:import.ljp.format,pos_amount:0
+#: selection:import.ljp.format,pos_descr:0
+msgid "Field 8"
+msgstr "Veld 8"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,pos_account:0
+#: selection:import.ljp.format,pos_amount:0
+#: selection:import.ljp.format,pos_descr:0
+msgid "Field 9"
+msgstr "Veld 9"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_ljp_data
+msgid "File"
+msgstr "Bestand"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_ljp_fname
+msgid "File Name"
+msgstr "Bestandsnaam"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_format_account
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_format_amount
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_id_8806
+msgid "Format"
+msgstr "Formaat"
+
+#. module: import_salary_journal_entries
+#: model:ir.ui.view,arch_db:import_salary_journal_entries.view_import_ljp_format
+msgid "Format Import"
+msgstr "Formaat import"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_name
+msgid "Format Name"
+msgstr "Formaat naam"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_id
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_id
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: import_salary_journal_entries
+#: model:ir.ui.view,arch_db:import_salary_journal_entries.view_import_ljp
+msgid "Import"
+msgstr "Importeer"
+
+#. module: import_salary_journal_entries
+#: model:ir.model,name:import_salary_journal_entries.model_import_ljp
+#: model:ir.ui.menu,name:import_salary_journal_entries.menu_import_ljp
+#: model:ir.ui.view,arch_db:import_salary_journal_entries.view_import_ljp
+msgid "Import Salary Journal Entries"
+msgstr "Importeer salarisjournaalposten"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_journal_id
+msgid "Journal"
+msgstr "Dagboek"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_line_import_id
+msgid "LJP"
+msgstr "LJP"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp___last_update
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format___last_update
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_line___last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_write_uid
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_line_write_uid
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_write_date
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_line_write_date
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: import_salary_journal_entries
+#: model:ir.ui.view,arch_db:import_salary_journal_entries.view_import_ljp
+msgid "Post Entries"
+msgstr "Post Entries"
+
+#. module: import_salary_journal_entries
+#: model:ir.ui.view,arch_db:import_salary_journal_entries.view_import_ljp
+msgid "Regel"
+msgstr "Regel"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_lines
+#: model:ir.ui.view,arch_db:import_salary_journal_entries.view_import_ljp
+msgid "Rows"
+msgstr "Rijen"
+
+#. module: import_salary_journal_entries
+#: model:ir.actions.act_window,name:import_salary_journal_entries.import_ljp_view_action
+msgid "Salary Journal Entries"
+msgstr "Salaris boekingen"
+
+#. module: import_salary_journal_entries
+#: model:ir.ui.view,arch_db:import_salary_journal_entries.view_import_ljp
+msgid "Select file with journal entries:"
+msgstr "Selecteer bestand met boekingen:"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,pos_descr:0
+msgid "Standard Value"
+msgstr "Standaard waarde:"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_state
+msgid "State"
+msgstr "Status"
+
+#. module: import_salary_journal_entries
+#: model:ir.model.fields,field_description:import_salary_journal_entries.field_import_ljp_format_value_descr
+msgid "Value"
+msgstr "Waarde"
+
+#. module: import_salary_journal_entries
+#: model:ir.model,name:import_salary_journal_entries.model_import_ljp_format
+msgid "import.ljp.format"
+msgstr "import.ljp.formaat"
+
+#. module: import_salary_journal_entries
+#: model:ir.model,name:import_salary_journal_entries.model_import_ljp_line
+msgid "import.ljp.line"
+msgstr "import.ljp.lijn"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp.format,format_account:0
+msgid "nvt"
+msgstr "nvt"
+
+#. module: import_salary_journal_entries
+#: selection:import.ljp,state:0
+msgid "ready"
+msgstr "klaar"

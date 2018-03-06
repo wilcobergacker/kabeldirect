@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--Supplier form view -->
+        <record id="view_invoice_supplier_form_inherit" model="ir.ui.view">
+            <field name="name">view.invoice.supplier.form.inherit</field>
+            <field name="model">account.invoice</field>
+            <field name="type">form</field>
+            <field name="priority">2</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form" />
+            <field name="arch" type="xml">
+
+                <xpath expr="//notebook/page/field[@name='invoice_line_ids']" position="replace">
+                    <field context="{'type': type, 'journal_id': journal_id, 'partner_id' : partner_id}" name="invoice_line_ids">
+                        <tree string="Bill lines" editable="bottom">
+                            <field name="sequence" widget="handle" />
+                            <field name="product_id"
+                                context="{'partner_id': parent.partner_id}"/>
+                            <field name="name"/>
+                            <field name="company_id" invisible="1"/>
+                            <field name="account_id" groups="account.group_account_user"
+                                domain="[('company_id', '=', parent.company_id), ('internal_type', '=', 'other')]"/>
+                            <field name="account_analytic_id" groups="analytic.group_analytic_accounting"
+                                domain="[('company_id', '=', parent.company_id)]"/>
+                            <field name="analytic_tag_ids" groups="analytic.group_analytic_accounting" widget="many2many_tags"/>
+                            <field name="quantity"/>
+                            <field name="uom_id" groups="product.group_uom"/>
+                            <field name="price_unit"/>
+                            <field name="discount" groups="sale.group_discount_per_so_line"/>
+                            <field name="invoice_line_tax_ids" widget="many2many_tags" context="{'type':parent.type}"
+                                domain="[('type_tax_use','=','purchase'),('company_id', '=', parent.company_id)]" options="{'no_create': True}"/>
+                            <field name="price_subtotal"/>
+                            <field name="currency_id" invisible="1"/>
+                        </tree>
+                    </field>
+                </xpath>
+
+                <xpath expr="//field[@name='date']" position="after">
+                    <field name="ubl_import_process_id" readonly="1"/>
+                    <field name="display_message" invisible="1"/>
+                </xpath>
+
+                <xpath expr="//form/sheet/div" position="before">
+                    <div style="text-align: center; color: orangered; font-size:13px;" attrs="{'invisible': [('display_message', '=', False)]}">
+                        <span style="background-color: #ddd; padding: 5px; border: solid; border-color: darkgrey; border-width: thin;">
+                            <span>The total amount '</span>
+                            <field name="invoice_amount" nolabel="1"/>
+                            <span>' of the created invoice is not matched with the value of amount '</span>
+                            <field name="error_message" nolabel="1"/>
+                            <span>' of the XML file.</span>
+                        </span>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

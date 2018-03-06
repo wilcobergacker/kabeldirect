@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_import_ljp" model="ir.ui.view">
+        <field name="name">import.ljp.form</field>
+        <field name="model">import.ljp</field>
+        <field name="arch" type="xml">
+            <form string="Import Salary Journal Entries">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="format_id"
+                                default_focus="1" />
+                        </group>
+                        <group>
+                            <field name="company_id" />
+                            <field name="journal_id"
+                                domain="[('company_id', '=', company_id)]" />
+                        </group>
+                        <group>
+                            <field name="booking_date" />
+                        </group>
+                    </group>
+                    <group
+                        string="Select file with journal entries:">
+                        <group>
+                            <field name="ljp_data" filename="ljp_fname" />
+                        </group>
+                        <group>
+                            <field name="ljp_fname" />
+                        </group>
+                    </group>
+                    <group>
+                        <field name="lines" nolabel="1"
+                            colspan="4">
+                            <tree string="Rows">
+                                <field name="account_id" />
+                                <field name="debit" />
+                                <field name="credit" />
+                                <field name="description" />
+                            </tree>
+                            <form string="Regel">
+                                <group>
+                                    <group>
+                                        <field name="account_id" />
+                                        <field name="description" />
+                                    </group>
+                                    <group>
+                                        <field name="debit" />
+                                        <field name="credit" />
+                                    </group>
+                                </group>
+                            </form>
+                        </field>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="do_import" string="Import"
+                        states="draft" type="object" class="oe_highlight" />
+                    <button name="do_import" string="Import"
+                        states="ready" type="object" />
+                    <button name="do_book" string="Post Entries"
+                        type="object" states="ready" class="oe_highlight" />
+                    <field name="state" invisible="1" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="import_ljp_view_action">
+        <field name="name">Salary Journal Entries</field>
+        <field name="res_model">import.ljp</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_import_ljp" />
+        <field name="target">new</field>
+    </record>
+
+</odoo>

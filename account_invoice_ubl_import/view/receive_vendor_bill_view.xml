@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!--Receive vendor bill Tree view -->
+        <record id="view_receive_vendor_bill_tree" model="ir.ui.view">
+            <field name="name">receive.vendor.bill.tree</field>
+            <field name="model">receive.vendor.bill</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <tree string="Receive Vendor Bill">
+                <field name="partner_id" domain="[('supplier','=',True)]"/>
+                <field name="seq_name"/>
+                <field name="date_time"/>
+                <field name="partner_id" domain="[('supplier','=',True)]"/>
+                <field name="email_address"/>
+                <field name="email_from"/>
+                <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                <field name="vendor_bill_ref"/>
+                <field name="state"/>
+            </tree>
+            </field>
+        </record>
+
+        <!--Receive vendor bill From view -->
+        <record id="view_receive_vendor_bill_form" model="ir.ui.view">
+            <field name="name">receive.vendor.bill.form</field>
+            <field name="model">receive.vendor.bill</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Receive Vendor Bill">
+                     <header>
+                         <button string="Process PDF"
+                             class="btn-primary" type="object" name="process_pdf"
+                             attrs="{'invisible': ['|','|', ('data_pdf', '=' , False),('email_from', '=', False), ('state', '!=', 'received')]}"/>
+                         <button string="Process XML" class="btn-primary"
+                             type="object" name="process_xml"
+                             attrs="{'invisible': ['|',('data_xml', '=', False), ('state', 'not in', ['rec_back_from_ubl_provider','received'])]}"/>
+                         <button string="Resend Email" type="object"
+                             class="btn-primary" name="resend_btn"
+                             attrs="{'invisible': ['|', ('state', 'not in', ['received']),
+                             ('data_xml', '=', False)]}"/>
+                         <button string="Create Vendor" type="object" class="btn-primary"
+                             name="create_vendor"
+                             attrs="{'invisible': ['|', '|', ('partner_id','!=',False),
+                             ('is_process_xml' ,'=', False),
+                             ('state', 'not in', ['rec_back_from_ubl_provider','received'])]}"/>
+                         <button string="Create Invoice" type="object"
+                             class="btn-primary" name="create_invoice"
+                              attrs="{'invisible': [('state','not in',['rec_back_from_ubl_provider','received'])]}"/>
+                         <button string="Cancel" type="object" class="btn-primary"
+                             name="cancel_btn"
+                             attrs="{'invisible': [('state','in',['vendor_bill_pro','cancel'])]}"/>
+                         <button string="Reset To Receive"
+                             type="object" class="btn-primary" name="reset_btn"
+                             attrs="{'invisible': [('state','not in',['cancel'])]}"/>
+                         <field name="state" widget="statusbar"
+                             statusbar_visible="received,fwd_to_ubl_provider,rec_back_from_ubl_provider,vendor_bill_pro"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="seq_name" readonly="1"/>
+                                <field name="partner_id"
+                                    domain="[('supplier','=',True)]"/>
+                                <field name="default_account_expense"
+                                    groups="account.group_account_invoice"
+                                    attrs="{'invisible': [('partner_id', '=', False)], 'required': [('partner_id', '!=', False)]}"/>
+                                <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company" readonly="1"/>
+                                <field name="date_time"/>
+                            </group>
+                            <group>
+                                <field name="vendor_bill_ref"
+                                    attrs="{'invisible': [('vendor_bill_ref', '=', False)]}"/>
+                               <field name="email_address"/>
+                               <field name="email_from"/>
+                               <field name="original_partner_id"
+                                   domain="[('supplier','=',True)]"
+                                   attrs="{'invisible': [('original_partner_id', '=', False)]}" />
+                               <field name="process_ubl_type" required="1"/>
+                               <field name="journal_id" readonly="1"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="data_pdf" filename='file_name_pdf'/>
+                            <field name="data_xml" filename='file_name_xml'/>
+                            <field name="is_process_xml" invisible='1'/>
+                            <field name="exception_description"/>
+                        </group>
+                        <separator string="Invoice Detail" colspan="4"/>
+                        <group colspan="4">
+                            <field name="invoice_type_code" invisible='1'/>
+                            <field name="account_invoice_id"/>
+                            <field name="issuedate"/>
+                            <field name="duedate"/>
+                            <field name="documentcurrencycode" invisible='1'/>
+                            <field name="currency_id"/>
+                        </group>
+
+                        <notebook>
+                            <page string="Accounting Supplier Party" name="accounting_supplier_party">
+                                <group>
+                                    <group string="Supplier Party Details" name="supplierparty">
+                                        <field name="partyidentification"/>
+                                        <field name="party_vat"/>
+                                        <field name="scheme_agency_id" invisible='1' />
+                                        <field name="partyname_supplier"/>
+                                    </group>
+                                    <group string="Postal Address Supplier" name="postal_address_supplier">
+                                        <field name="streetname_postal_supplier"/>
+                                        <field name="cityname_postal_supplier"/>
+                                        <field name="postalzone_postal_supplier"/>
+                                        <field name="country_supplier_postal_id"/>
+                                        <field name="country_identificationcode_postal_supplier"/>
+                                    </group>
+                                    <group string="Physical Address Supplier" name='physical_address_supplier'>
+                                        <field name="streetname_physical_supplier"/>
+                                        <field name="cityname_physical_supplier"/>
+                                        <field name="postalzone_physical_supplier"/>
+                                        <field name="country_supplier_physical_id"/>
+                                        <field name="country_identificationcode_physical_supplier"/>
+                                    </group>
+                                    <group string=" Party Tax Scheme supplier" name="partytaxscheme_supplier">
+                                        <field name="tax_registration_name_supplier"/>
+                                        <field name="tax_id_supplier" invisible='1'/>
+                                        <field name="tax_code_supplier" invisible='1'/>
+                                    </group>
+                                     <group string="Bank Detail" name="bank_detail">
+                                        <field name="vendor_acc_account"/>
+                                        <field name="bic_code"/>
+                                    </group>
+                                    <group string="Party LegalEntity supplier" name="party_legal_entity_supplier">
+                                        <field name="legal_entity_registration_name_supplier"/>
+                                        <field name="company_id_supplier"/>
+                                    </group>
+                                    <group string="Contact Detail" name="contact_detail">
+                                        <field name="contact_supplier_phone"/>
+                                        <field name="contact_supplier_email"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Accounting Customer Party" name="accounting_customer_party">
+                                <group>
+                                    <group string="Customer Party Details">
+                                        <field name="supplier_assigned_account_id"/>
+                                        <field name="partyname_customer"/>
+                                    </group>
+                                    <group string="Postal Address customer">
+                                        <field name="streetname_postal_customer"/>
+                                        <field name="cityname_postal_customer"/>
+                                        <field name="postalzone_postal_customer"/>
+                                        <field name="country_customer_postal_id"/>
+                                        <field name="country_identificationcode_postal_customer"/>
+                                    </group>
+                                    <group string="Party Legal Entity customer">
+                                        <field name="legal_entity_registration_name_customer"/>
+                                        <field name="company_id_customer"/>
+                                        <field name="contact_customer"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Legal Monetary Total" name="legal_monetary_total">
+                                <group>
+                                    <group>
+                                        <field name="line_extension_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                        <field name="tax_exclusive_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                        <field name="tax_inclusive_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                        <field name="payable_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                        <field name="total_tax_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Invoice Line" name="invoice_line">
+                                <field name="receive_vendor_bill_line_ids" readonly='1'/>
+                            </page>
+                            <page string="Log" name="logs">
+                                <field name="log_entries"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!--Receive vendor bill Search view-->
+        <record id="view_receive_vendor_bill_search" model="ir.ui.view">
+            <field name="name">receive.vendor.bill.search</field>
+            <field name="model">receive.vendor.bill</field>
+            <field name="type">search</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <search string="Receive Vendor Bill">
+                <field name="partner_id"/>
+                <field name="vendor_bill_ref"/>
+                <field name="date_time"/>
+                <field name="email_from"/>
+                <field name="email_address"/>
+                <field name="seq_name"/>
+                <group expand="0" string="Group By">
+                    <filter string="Vendor Bill Processed" domain="[('state','=','vendor_bill_pro')]" context="{}"/>
+                    <filter string="Cancel" domain="[('state','=','cancel')]" context="{}"/>
+                 </group>
+            </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_receive_vendor_bill_view">
+            <field name="name">Receive Vendor Bill</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">receive.vendor.bill</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_receive_vendor_bill_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_receive_vendor_bill_view_form">
+            <field name="act_window_id" ref="act_open_receive_vendor_bill_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_receive_vendor_bill_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_receive_vendor_bill_view_tree">
+            <field name="act_window_id" ref="act_open_receive_vendor_bill_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_receive_vendor_bill_tree"/>
+        </record>
+
+        <!--Receive vendor bill menu-->
+        <menuitem id="menu_receive_vendor_bill"
+            parent="account.menu_finance_payables_documents"
+            sequence="20"
+            action="act_open_receive_vendor_bill_view"/>
+    </data>
+</odoo>

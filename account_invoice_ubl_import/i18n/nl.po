@@ -1,0 +1,1110 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#       * account_invoice_ubl_import
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-23 13:05+0000\n"
+"PO-Revision-Date: 2017-11-27 16:58+0100\n"
+"Last-Translator: Odoo Experts <erwin@odooexperts.nl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: nl\n"
+"X-Generator: Poedit 1.7.1\n"
+
+#. module: account_invoice_ubl_import
+#: model:mail.template,body_html:account_invoice_ubl_import.ubl_provider_email
+msgid ""
+"\n"
+"<div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF;\">\n"
+"   <p>UBL provider</p>\n"
+"</div>\n"
+"            "
+msgstr ""
+"\n"
+"<div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF;\">\n"
+"   <p>UBL provider</p>\n"
+"</div>\n"
+"            "
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/account_res_config.py:56
+#, python-format
+msgid ""
+"<div style='font-family: 'Lucida Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF;'>\n"
+"   <pre>\n"
+"        Hello Go2Ubl,\n"
+"\n"
+"        This company has installed the Odoo UBL module and has selected Go2UBL as the preferred UBL provider. Please contact them and make the right settings for Odoo.\n"
+"\n"
+"        - %s,%s\n"
+"\n"
+"        - %s\n"
+"\n"
+"        - %s\n"
+"\n"
+"        - %s\n"
+"\n"
+"        Thank you.\n"
+"   </pre>\n"
+"</div>\n"
+msgstr ""
+"<div style='font-family: 'Lucida Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF;'>\n"
+"   <pre>\n"
+"        Hallo Go2Ubl,\n"
+"        Dit bedrijf heeft de Odoo UBL module geïnstalleerd en heeft Go2UBL gekozen als UBL verwerker. Zouden jullie met hen contact kunnen opnemen?\n"
+"\n"
+"        - %s,%s\n"
+"\n"
+"        - %s\n"
+"\n"
+"        - %s\n"
+"\n"
+"        - %s\n"
+"\n"
+"        Dank je.\n"
+"   </pre>\n"
+"</div>\n"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_invoice_supplier_form_inherit
+msgid "<span>' of the XML file.</span>"
+msgstr "<span>' in het UBL bestand.</span>"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_invoice_supplier_form_inherit
+msgid "<span>' of the created invoice is not matched with the value of amount '</span>"
+msgstr "<span>' van de aangemaakte factuur komt niet overeen met het totaalbedrag van '</span>"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_invoice_supplier_form_inherit
+msgid "<span>The total amount '</span>"
+msgstr "<span>Het totaalbedrag van '</span>"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_scheme_agency_id
+msgid "@scheme Agency ID"
+msgstr "@scheme Agency ID"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:711
+#, python-format
+msgid "A created invoice of amount with tax '%s' is not match with the value of amount with tax '%s' in XML file"
+msgstr "Een aangemaakte factuur met een bedrag incl. BTW van '%s' komt niet overeen met het bedrag incl. BTW '%s' in het XML bestand"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:707
+#, python-format
+msgid "A created invoice of amount without Tax '%s' is not match with the value of amount without Tax '%s' in XML file"
+msgstr "Een aangemaakte factuur met een bedrag excl. BTW van '%s' komt niet overeen met het bedrag excl. BTW '%s'  in het XML bestand"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:709
+#, python-format
+msgid "A created invoice of tax amount '%s' is not match with the value of tax amount '%s' in XML file"
+msgstr "Een aangemaakte factuur met een BTW bedrag van '%s' komt niet overeen met het BTW bedrag '%s' in het XML bestand"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_account_account
+msgid "Account"
+msgstr "Rekening"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_vendor_acc_account
+msgid "Account Number"
+msgstr "Rekeningnummer"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Accounting Customer Party"
+msgstr "Klant gegevens"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Accounting Supplier Party"
+msgstr "Leverancier gegevens"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_partner_auto_update_account_expense
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_users_auto_update_account_expense
+msgid "Auto Save"
+msgstr "Automatisch opslaan"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Bank Detail"
+msgstr "Bank detail"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_bic_code
+msgid "Bank Identifier Code"
+msgstr "Bank ID code"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_invoice_supplier_form_inherit
+msgid "Bill lines"
+msgstr "Factuurregels"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_receive_vendor_bill_blacklist
+msgid "Blacklist For Receiving Vendor Bills"
+msgstr "Blacklist voor ontvangen leveranciersfacturen"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_invoice_confirmation
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_search
+msgid "Cancel"
+msgstr "Annuleer"
+
+#. module: account_invoice_ubl_import
+#: selection:receive.vendor.bill,state:0
+msgid "Canceled"
+msgstr "Geannuleerd"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_cityname_physical_supplier
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_cityname_postal_customer
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_cityname_postal_supplier
+msgid "City"
+msgstr "Plaats"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_res_company
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_fetchmail_server_company_id
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_company_id
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_tax_mapping_company_id
+msgid "Company"
+msgstr "Bedrijf"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_company_id_customer
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_company_id_supplier
+msgid "Company ID"
+msgstr "KvK nummer"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_partner_company_registry
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_users_company_registry
+msgid "Company Registry"
+msgstr "KvK gegevens"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_res_company_tax_mapping
+msgid "Company Tax Mapping"
+msgstr "Bedrijfs BTW mapping"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_contact_customer
+msgid "Contact"
+msgstr "Contactpersoon"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Contact Detail"
+msgstr "Contact details"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_country_customer_postal_id
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_country_supplier_physical_id
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_country_supplier_postal_id
+msgid "Country"
+msgstr "Land"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Create Invoice"
+msgstr "Maak factuur"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_invoice_confirmation
+msgid "Create Invoice Confirmation for Receive Vendor Bill"
+msgstr "Aanmaken leveranciersfactuur bevestiging"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:552
+#, python-format
+msgid "Create Invoice?"
+msgstr "Factuur aanmaken?"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Create Vendor"
+msgstr "Maak leverancier"
+
+#. module: account_invoice_ubl_import
+#: selection:receive.vendor.bill,process_ubl_type:0
+msgid "Create Vendor Bill from PDF"
+msgstr "Leveranciersfactuur aanmaken van PDF"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_invoice_confirmation_create_uid
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_blacklist_create_uid
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_create_uid
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_create_uid
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_tax_mapping_create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_invoice_confirmation_create_date
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_blacklist_create_date
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_create_date
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_create_date
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_tax_mapping_create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_currency_id
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_currency_id
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Customer Party Details"
+msgstr "Klant gegevens"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_data_pdf
+msgid "Data PDF"
+msgstr "Gegevens PDF"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_data_xml
+msgid "Data XML"
+msgstr "Gegevens XML"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_date_time
+msgid "Date time"
+msgstr "Datum/tijd"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,help:account_invoice_ubl_import.field_receive_vendor_bill_default_account_expense
+#: model:ir.model.fields,help:account_invoice_ubl_import.field_res_partner_property_account_expense
+#: model:ir.model.fields,help:account_invoice_ubl_import.field_res_users_property_account_expense
+msgid "Default counterpart account for purchases"
+msgstr "Standaard tegenrekening voor inkopen"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_default_account_expense
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_partner_property_account_expense
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_users_property_account_expense
+msgid "Default expense account"
+msgstr "Standaard kosten rekening"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_description
+msgid "Description"
+msgstr "Omschrijving"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_account_invoice_display_message
+msgid "Display Error Message"
+msgstr "Weergeven foutmelding"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_invoice_confirmation_display_name
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_blacklist_display_name
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_display_name
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_display_name
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_tax_mapping_display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: account_invoice_ubl_import
+#: selection:receive.vendor.bill,process_ubl_type:0
+msgid "Do Not Process the Vendor Bill"
+msgstr "Leveranciersfactuur niet verwerken"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_documentcurrencycode
+msgid "Document Currency Code"
+msgstr "Document valuta code"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_duedate
+msgid "Due Date"
+msgstr "Vervaldatum"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_contact_supplier_email
+msgid "Email"
+msgstr "E-mail"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_email_address
+msgid "Email Address"
+msgstr "E-mail adres"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_blacklist_email
+msgid "Email For Blacklist"
+msgstr "E-mail voor blacklist"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_mail_thread
+msgid "Email Thread"
+msgstr "E-mail discussie"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_company_email_address_fwd_vendor_bill_to
+msgid "Email address to forward vendor bill to"
+msgstr "E-mail adres waar naartoe de factuur wordt doorgestuurd"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_config_settings_email_address_fwd_vendor_bill_to
+msgid "Email address to forward vendor bill to *"
+msgstr "E-mail adres waar naartoe de factuur wordt doorgestuurd *"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:1210
+#, python-format
+msgid "Error From Cron Something went wrong: '%s'."
+msgstr "Foutmelding van geplande acties (Cron). Er is iets fout gegaan: '%s'."
+
+#. module: account_invoice_ubl_import
+#: selection:receive.vendor.bill,state:0
+msgid "Exception"
+msgstr "Fout"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_exception_description
+msgid "Exception description"
+msgstr "Fout omschrijving"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:583
+#, python-format
+msgid "First process the XML file"
+msgstr "Verwerk eerst het XML bestand"
+
+#. module: account_invoice_ubl_import
+#: selection:receive.vendor.bill,state:0
+msgid "Forwarded to UBL provider"
+msgstr "Doorgestuurd naar UBL provider"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_email_from
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_file_name_pdf
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_file_name_xml
+msgid "From"
+msgstr "Van"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_search
+msgid "Group By"
+msgstr "Groepeer op"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_invoice_confirmation_id
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_blacklist_id
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_id
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_id
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_tax_mapping_id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_country_identificationcode_physical_supplier
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_country_identificationcode_postal_customer
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_country_identificationcode_postal_supplier
+msgid "Identification Code"
+msgstr "Identification code"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.res_config_settings_view_form_inherit_form
+msgid "Inform Go2UBL"
+msgstr "Informeer Go2UBL"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_account_invoice
+msgid "Invoice"
+msgstr "Factuur"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_account_invoice_invoice_amount
+msgid "Invoice Amount"
+msgstr "Factuurbedrag"
+
+#. module: account_invoice_ubl_import
+#: model:ir.actions.act_window,name:account_invoice_ubl_import.action_view_invoice_confirmation
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_invoice_confirmation
+msgid "Invoice Confirmation"
+msgstr "Factuurbevestiging"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Invoice Detail"
+msgstr "Factuurdetail"
+
+#. module: account_invoice_ubl_import
+#: model:ir.actions.act_window,name:account_invoice_ubl_import.act_open_receive_vendor_bill_line_view
+#: model:ir.model,name:account_invoice_ubl_import.model_account_invoice_line
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_receive_vendor_bill_line_ids
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_line_form
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_line_search
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_line_tree
+msgid "Invoice Line"
+msgstr "Factuurregel"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_invoice_type_code
+msgid "Invoice Type Code"
+msgstr "Factuursoort code"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:693
+#, python-format
+msgid "Invoice create successfully."
+msgstr "Factuur succesvol aangemaakt."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:585
+#, python-format
+msgid "Invoice is already created."
+msgstr "Factuur is al aangemaakt."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:594
+#, python-format
+msgid "Invoice is created manually without configured Process Vendor Bill."
+msgstr "Factuur is handmatig aangemaakt zonder een geconfigureerde inkomende mailserver en instellingen voor verwerking."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:652
+#, python-format
+msgid "Invoice line is creating without Tax Id."
+msgstr "Factuurregel aangemaakt zonder BTW."
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_account_invoice_id
+msgid "Invoiced"
+msgstr "Gefactureerd"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_invoiced_quantity
+msgid "Invoiced Quantity"
+msgstr "Gefactureerde hoeveelheid"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:722
+#, python-format
+msgid "Invoices"
+msgstr "Facturen"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_issuedate
+msgid "Issue Date"
+msgstr "Factuurdatum"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_fetchmail_server_journal_id
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_journal_id
+msgid "Journal"
+msgstr "Dagboek"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_invoice_confirmation___last_update
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill___last_update
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_blacklist___last_update
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line___last_update
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_tax_mapping___last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_invoice_confirmation_write_uid
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_blacklist_write_uid
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_write_uid
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_write_uid
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_tax_mapping_write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_invoice_confirmation_write_date
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_blacklist_write_date
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_write_date
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_write_date
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_tax_mapping_write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Legal Monetary Total"
+msgstr "Factuurtotalen"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_extension_amount
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_line_extension_amount_invoice_line
+msgid "Line Extension Amount"
+msgstr "Regelbedrag"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_log_entries
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Log"
+msgstr "Log"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:1146
+#, python-format
+msgid "Mail not send,Please send again."
+msgstr "E-mail is niet verstuurd, verstuur opnieuw."
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_ir_module_module
+msgid "Module"
+msgstr "Module"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_name
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_name
+msgid "Name"
+msgstr "Naam"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:739
+#, python-format
+msgid "No PDF or UBL XML file received from vendor."
+msgstr "Geen PDF of UBL XML bestand ontvangen van leverancier."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/account_invoice_line.py:44
+#, python-format
+msgid "No object created for partner %d"
+msgstr "Geen object aangemaakt voor relatie %d"
+
+#. module: account_invoice_ubl_import
+#: selection:receive.vendor.bill,state:0
+msgid "Not Process"
+msgstr "Niet verwerken"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_original_partner_id
+msgid "Original Sender"
+msgstr "Originele zender"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:660
+#, python-format
+msgid "PDF data file is not uploaded."
+msgstr "PDF bestand is niet geüpload."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:1148
+#, python-format
+msgid "PDF file is successfully send to Ubl Provider."
+msgstr "Het PDF bestand is succesvol verstuurd naar de UBL provider."
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_company_pdf2ubl_provider
+msgid "PDF2UBL provider"
+msgstr "PDF2UBL provider"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_config_settings_pdf2ubl_provider
+msgid "PDF2UBL provider *"
+msgstr "PDF2UBL provider *"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_fetchmail_server
+msgid "POP/IMAP Server"
+msgstr "POP/IMAP Server"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_res_partner
+msgid "Partner"
+msgstr "Relatie"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_partyidentification
+msgid "Party Identification"
+msgstr "Leveranciers identificatie"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Party Legal Entity customer"
+msgstr "Officiële klantnaam"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Party LegalEntity supplier"
+msgstr "Officiële leveranciersnaam"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_partyname_customer
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_partyname_supplier
+msgid "Party Name"
+msgstr "Leveranciersnaam"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_tax_id_supplier
+msgid "Party Tax Scheme ID"
+msgstr "Leveranciers BTW nummer"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_tax_code_supplier
+msgid "Party Tax Scheme Taxcode Type"
+msgstr "BTW soort"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Party Tax Scheme supplier"
+msgstr "BTW gegevens leverancier"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_party_vat
+msgid "Party Tin"
+msgstr "BTW nummer"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_payable_amount
+msgid "Payable Amount"
+msgstr "Te betalen bedrag"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_tax_percent_invoice_line
+msgid "Percent"
+msgstr "Percentage"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_contact_supplier_phone
+msgid "Phone"
+msgstr "Telefoon"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Physical Address Supplier"
+msgstr "Bezoekadres leverancier"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:471
+#, python-format
+msgid "Please Process the XML file First."
+msgstr "Verwerk eerst het XML bestand."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:622
+#, python-format
+msgid "Please configure the Tax in 'Tax Configuration' page at company level"
+msgstr "U dient eerst de BTW in te stellen bij het 'BTW instellingen' tabblad bij de bedrijfsgegevens"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/res_company.py:42
+#, python-format
+msgid "Please configure the Tax in 'Tax Configuration' page at company level."
+msgstr "U dient de BTW in te stellen bij de bedrijfsinstellingen op tabblad 'BTW Instellingen'."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:1111
+#, python-format
+msgid "Please configure the email address of UBL Provider for company '%s'."
+msgstr "U dient het e-mail adres van de UBL provider in te stellen voor bedrijf '%s'."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:576
+#, python-format
+msgid "Please define an accounting purchase journal for '%s' company."
+msgstr "Definieer een inkoopboek voor bedrijf '%s'."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:591
+#, python-format
+msgid "Please select the partner for creating invoice."
+msgstr "U dient een leverancier te selecteren voor het aanmaken van een factuur."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/res_company_tax_mapping.py:22
+#, python-format
+msgid "Please select the proper 'Tax Code' that belong to the company"
+msgstr "U dient een juiste 'BTW code' welke behoort bij het juiste bedrijf te seleceren"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:543
+#, python-format
+msgid "Please select the vendor for creating invoice."
+msgstr "U dient een leverancier te selecteren voor het aanmaken van de factuur."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:1097
+#, python-format
+msgid "Please upload a valid xml file for processing a UBL invoice '%s'."
+msgstr "U dient een geldig XML bestand te uploaden voor het verwerken tot factuur '%s'."
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Postal Address Supplier"
+msgstr "Postadres leverancier"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Postal Address customer"
+msgstr "Postadres klant"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_postalzone_physical_supplier
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_postalzone_postal_customer
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_postalzone_postal_supplier
+msgid "Postal Zone"
+msgstr "Postcode"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_price_amount
+msgid "Price Amount"
+msgstr "Subtotaal"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Process PDF"
+msgstr "Verwerk PDF"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_fetchmail_server_config_process_ubl
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_process_ubl_type
+msgid "Process Vendor Bill"
+msgstr "Verwerk leveranciersfactuur"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_is_process_xml
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Process XML"
+msgstr "Verwerk XML"
+
+#. module: account_invoice_ubl_import
+#: selection:fetchmail.server,config_process_ubl:0
+msgid "Process the PDF Vendor Bill"
+msgstr "Verwerk de PDF leveranciersfactuur"
+
+#. module: account_invoice_ubl_import
+#: selection:fetchmail.server,config_process_ubl:0
+msgid "Process the UBL Vendor Bill"
+msgstr "Verwerk de UBL leveranciersfactuur"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_line_form
+msgid "Product and Price Details"
+msgstr "Product en prijs details"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_blacklist_reason
+msgid "Reason For Blacklist"
+msgstr "Reden voor blacklist"
+
+#. module: account_invoice_ubl_import
+#: model:ir.actions.act_window,name:account_invoice_ubl_import.act_open_receive_vendor_bill_view
+#: model:ir.ui.menu,name:account_invoice_ubl_import.menu_receive_vendor_bill
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_search
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_tree
+msgid "Receive Vendor Bill"
+msgstr "Ontvangen leveranciersfacturen"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_account_invoice_error_message
+msgid "Receive Vendor Bill Amount"
+msgstr "Ontvangen bedrag leveranciersfactuur"
+
+#. module: account_invoice_ubl_import
+#: selection:receive.vendor.bill,state:0
+msgid "Received"
+msgstr "Ontvangen"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_receive_vendor_bill
+msgid "Received UBL bills"
+msgstr "Ontvangen leveranciersfacturen"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_receive_vendor_bill_id
+msgid "Received Vendor Bill"
+msgstr "Ontvangen leveranciersfactuur"
+
+#. module: account_invoice_ubl_import
+#: selection:receive.vendor.bill,state:0
+msgid "Received back from UBL provider"
+msgstr "Terug ontvangen van UBL provider"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_legal_entity_registration_name_customer
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_legal_entity_registration_name_supplier
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_tax_registration_name_supplier
+msgid "Registration Name"
+msgstr "Leverancier registratienaam"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Resend Email"
+msgstr "Verstuur E-mail opnieuw"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Reset To Receive"
+msgstr "Reset naar te ontvangen"
+
+#. module: account_invoice_ubl_import
+#: selection:receive.vendor.bill,process_ubl_type:0
+msgid "Send Vendor Bill to UBL Porvider or process XML"
+msgstr "Stuur leveranciersfactuur naar UBL provider of Verwerk XML"
+
+#. module: account_invoice_ubl_import
+#: model:ir.actions.server,name:account_invoice_ubl_import.ir_cron_send_pdf_to_ubl_provider_ir_actions_server
+#: model:ir.cron,cron_name:account_invoice_ubl_import.ir_cron_send_pdf_to_ubl_provider
+#: model:ir.cron,name:account_invoice_ubl_import.ir_cron_send_pdf_to_ubl_provider
+msgid "Send mail to UBL Provider Cron"
+msgstr "Verstuur leveranciersfactuur naar UBL provider"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_seq_name
+msgid "Sequence"
+msgstr "Reeks"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.res_config_settings_view_form_inherit_form
+msgid "Setup taxes"
+msgstr "Instellen BTW"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_state
+msgid "State"
+msgstr "Status"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_streetname_physical_supplier
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_streetname_postal_customer
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_streetname_postal_supplier
+msgid "Street"
+msgstr "Straat"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_supplier_assigned_account_id
+msgid "Supplier Assigned Account ID"
+msgstr "Debiteurnummer"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_form
+msgid "Supplier Party Details"
+msgstr "Leverancier gegevens"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_tax_amount_invoice_line
+msgid "Tax Amount"
+msgstr "BTW bedrag"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_res_comapny_tax_mapping_form
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_res_comapny_tax_mapping_tree
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_res_company_form
+msgid "Tax Configuration"
+msgstr "BTW Instellingen"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_tax_exclusive_amount
+msgid "Tax Exclusive Amount"
+msgstr "Bedrag Excl. BTW"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_tax_mapping_account_tax_id
+msgid "Tax ID"
+msgstr "BTW naam"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_tax_inclusive_amount
+msgid "Tax Inclusive Amount"
+msgstr "Bedrag Incl. BTW"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_res_company_tax_mapping_ids
+msgid "Tax Mapping"
+msgstr "Vervangingstabel BTW"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_tax_mapping_tax_name
+msgid "Tax Name"
+msgstr "BTW naam"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_res_company_tax_mapping_tax_percent
+msgid "Tax Percent"
+msgstr "BTW percentage"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_line_tax_subtotal_invoice_line
+msgid "Tax Subtotal"
+msgstr "BTW subtotaal"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:443
+#, python-format
+msgid "The bank account number '%s' already exists for another vendor. So we skipped creating the new bank account."
+msgstr "Bankrekening '%s' bestaat al bij en andere leverancier en is niet gekoppeld aan deze nieuwe leverancier."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:316
+#, python-format
+msgid "The email '%s' is ignored because the email address is on the blacklist."
+msgstr "Deze e-mail '%s' is overgeslagen omdat het e-mail adres op de blacklist staat."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:1115
+#, python-format
+msgid "There is no PDF file for sending to UBL Provider."
+msgstr "Er is geen PDF bestand om te versturen naar de UBL provider."
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_invoice_confirmation
+msgid "There is no attachment found. Do you want to create invoice anyhow?"
+msgstr "Er is geen factuurbijlage gevonden. Wilt u toch een factuur aanmaken?"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:655
+#, python-format
+msgid "There is no invoice line. So no invoice is created."
+msgstr "Er is geen factuurregel, daarom is er geen factuur aangemaakt."
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.res_config_settings_view_form_inherit_form
+msgid "This will inform Go2UBL that you are using Odoo. Go2UBL will contact you to setup your Go2UBL account"
+msgstr "Door het klikken op deze knop wordt Go2UBL geïnformeerd dat u Odoo gebruikt. Go2UBL zal contact met u opnemen voor het verder instellen van uw account."
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_line_tree
+msgid "Total"
+msgstr "Totaal"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_total_tax_amount
+msgid "Total Tax Amount"
+msgstr "Totaal BTW bedrag"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.res_config_settings_view_form_inherit_form
+msgid "UBL Configuration"
+msgstr "UBL configuratie"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_account_invoice_ubl_import_process_id
+msgid "UBL Import Process"
+msgstr "UBL import proces"
+
+#. module: account_invoice_ubl_import
+#: model:mail.template,subject:account_invoice_ubl_import.ubl_provider_email
+msgid "Ubl Pdf Mail"
+msgstr "UBL PDF E-mail"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_res_company_form
+msgid "Ubl Provider"
+msgstr "UBL Provider"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_partner_id
+msgid "Vendor"
+msgstr "Leverancier"
+
+#. module: account_invoice_ubl_import
+#: model:ir.actions.act_window,name:account_invoice_ubl_import.act_open_receive_vendor_bill_blacklist_view
+#: model:ir.ui.menu,name:account_invoice_ubl_import.menu_receive_vendor_bill_blacklist
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_blacklist_form
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_blacklist_search
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_blacklist_tree
+msgid "Vendor Bill Blacklist email adresses"
+msgstr "Leveranciersfacturen blacklist email adressen"
+
+#. module: account_invoice_ubl_import
+#: model:ir.actions.server,name:account_invoice_ubl_import.ir_vendor_process_bill_cron_ir_actions_server
+#: model:ir.cron,cron_name:account_invoice_ubl_import.ir_vendor_process_bill_cron
+#: model:ir.cron,name:account_invoice_ubl_import.ir_vendor_process_bill_cron
+msgid "Vendor Bill Process Cron"
+msgstr "Leveranciersfactuur verwerken"
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_receive_vendor_bill_search
+#: selection:receive.vendor.bill,state:0
+msgid "Vendor Bill Processed"
+msgstr "Leveranciersfactuur verwerkt"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,field_description:account_invoice_ubl_import.field_receive_vendor_bill_vendor_bill_ref
+msgid "Vendor Bill reference"
+msgstr "Referentie leveranciersfactuur"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:528
+#, python-format
+msgid "Vendor created successfully."
+msgstr "Leverancier is succesvol aangemaakt."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:493
+#, python-format
+msgid "Vendor is added successfully."
+msgstr "Leverancier is succesvol aangemaakt."
+
+#. module: account_invoice_ubl_import
+#: model:ir.model.fields,help:account_invoice_ubl_import.field_res_partner_auto_update_account_expense
+#: model:ir.model.fields,help:account_invoice_ubl_import.field_res_users_auto_update_account_expense
+msgid "When account selected on invoice, automatically save it"
+msgstr "Wanneer geselecteerd op factuur, automatisch opslaan"
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:530
+#, python-format
+msgid "While processing XML file Party Identification or Party Tin or Original Sender is not set. So Vendor is not created."
+msgstr "Bij het verwerken van het UBL bestand is geen KvK nummer of BTW nummer of originele zender gevonden. Leverancier kon niet worden aangemaakt."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:791
+#, python-format
+msgid "XML data file is not uploaded."
+msgstr "XML bestand is niet geuploaded."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:736
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:1120
+#, python-format
+msgid "XML file already exists. So you are not able to do further process for forward to ubl provider."
+msgstr "XML bestand bestaat al. Het is niet mogelijk om de factuur te versturen naar de UBL provider."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:1092
+#, python-format
+msgid "Xml file does not contain valid data."
+msgstr "XML bestand bevat geen geldige gegevens."
+
+#. module: account_invoice_ubl_import
+#: code:addons/account_invoice_ubl_import/model/receive_vendor_bill.py:1089
+#, python-format
+msgid "Xml file is successfully loaded."
+msgstr "XML bestand is succesvol geladen."
+
+#. module: account_invoice_ubl_import
+#: model:ir.ui.view,arch_db:account_invoice_ubl_import.view_invoice_confirmation
+msgid "Yes"
+msgstr "Ja"
+
+#. module: account_invoice_ubl_import
+#: selection:res.company,company_pdf2ubl_provider:0
+#: selection:res.config.settings,pdf2ubl_provider:0
+msgid "go2ubl.nl"
+msgstr "go2ubl.nl"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_receive_vendor_bill_line
+msgid "receive.vendor.bill.line"
+msgstr "receive.vendor.bill.line"
+
+#. module: account_invoice_ubl_import
+#: model:ir.model,name:account_invoice_ubl_import.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"

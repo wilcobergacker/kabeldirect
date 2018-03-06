@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    <!--Fetchmail form view -->
+     <record id="view_fetchmail_form_inherit" model="ir.ui.view">
+         <field name="name">fetchmail.server.form</field>
+         <field name="model">fetchmail.server</field>
+         <field name="type">form</field>
+         <field name="priority" eval="8"/>
+         <field name="inherit_id" ref="fetchmail.view_email_server_form"/>
+         <field name="arch" type="xml">
+            <xpath expr="//field[@name='date']" position="after">
+                <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}" />
+                <field name="config_process_ubl"/>
+                <field name="journal_id"/>
+            </xpath>
+         </field>
+     </record>
+    </data>
+</odoo>

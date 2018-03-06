@@ -1,0 +1,9 @@
+<odoo>
+
+    <menuitem id="menu_import_ljp"
+              name="Import Salary Journal Entries"
+              sequence="80"
+              parent="account.menu_finance_entries"
+              action="import_ljp_view_action" />
+
+</odoo>

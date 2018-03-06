@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_mass_invoice_email_send_form" model="ir.ui.view">
+            <field name="name">Send Invoices by Email</field>
+            <field name="model">invoice.email.send</field>
+            <field name="arch" type="xml">
+                <form string="Send Invoices by Email">
+                    <p class="oe_grey">
+                        This wizard will send selected invoices to customers by email.
+                    </p>
+                    <group/>
+                    <footer>
+                        <button name="invoice_email_send" confirm="Are you sure you want to send?" type="object"  string="Send" class="btn-primary"/>
+                        or
+                        <button string="_Cancel" class="btn-default" special="cancel" />
+                    </footer>                    
+                </form>
+            </field>
+        </record>
+        
+         <act_window id="action_mass_invoice_email_send"
+            multi="True"
+            key2="client_action_multi" name="Mass Invoice Email Send"
+            res_model="invoice.email.send" src_model="account.invoice"
+            view_mode="form" target="new" view_type="form" />
+
+    </data>
+</openerp>

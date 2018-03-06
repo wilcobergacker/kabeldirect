@@ -1,0 +1,93 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mass_invoice_email_send
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-31 09:58+0000\n"
+"PO-Revision-Date: 2018-01-31 11:11+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: nl\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: mass_invoice_email_send
+#: model:ir.ui.view,arch_db:mass_invoice_email_send.view_mass_invoice_email_send_form
+msgid "Are you sure you want to send?"
+msgstr "Weet je zeker dat je e-mails wil versturen?"
+
+#. module: mass_invoice_email_send
+#: model:ir.model.fields,field_description:mass_invoice_email_send.field_invoice_email_send_create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: mass_invoice_email_send
+#: model:ir.model.fields,field_description:mass_invoice_email_send.field_invoice_email_send_create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: mass_invoice_email_send
+#: model:ir.model.fields,field_description:mass_invoice_email_send.field_invoice_email_send_display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: mass_invoice_email_send
+#: model:ir.model.fields,field_description:mass_invoice_email_send.field_invoice_email_send_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mass_invoice_email_send
+#: model:ir.model.fields,field_description:mass_invoice_email_send.field_invoice_email_send___last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: mass_invoice_email_send
+#: model:ir.model.fields,field_description:mass_invoice_email_send.field_invoice_email_send_write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: mass_invoice_email_send
+#: model:ir.model.fields,field_description:mass_invoice_email_send.field_invoice_email_send_write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: mass_invoice_email_send
+#: model:ir.actions.act_window,name:mass_invoice_email_send.action_mass_invoice_email_send
+msgid "Mass Invoice Email Send"
+msgstr "Massa e-mail versturen"
+
+#. module: mass_invoice_email_send
+#: model:ir.ui.view,arch_db:mass_invoice_email_send.view_mass_invoice_email_send_form
+msgid "Send"
+msgstr "Verzenden"
+
+#. module: mass_invoice_email_send
+#: model:ir.ui.view,arch_db:mass_invoice_email_send.view_mass_invoice_email_send_form
+msgid "Send Invoices by Email"
+msgstr "Verstuur facturen per e-mail"
+
+#. module: mass_invoice_email_send
+#: model:ir.ui.view,arch_db:mass_invoice_email_send.view_mass_invoice_email_send_form
+msgid "This wizard will send selected invoices to customers by email."
+msgstr "Deze wizard zal alle geselecteerde facturen per e-mail versturen."
+
+#. module: mass_invoice_email_send
+#: model:ir.ui.view,arch_db:mass_invoice_email_send.view_mass_invoice_email_send_form
+msgid "_Cancel"
+msgstr "_Annuleren"
+
+#. module: mass_invoice_email_send
+#: model:ir.model,name:mass_invoice_email_send.model_invoice_email_send
+msgid "invoice.email.send"
+msgstr "invoice.email.send"
+
+#. module: mass_invoice_email_send
+#: model:ir.ui.view,arch_db:mass_invoice_email_send.view_mass_invoice_email_send_form
+msgid "or"
+msgstr "of"

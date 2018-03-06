@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="res_partner_interest_form" model="ir.ui.view">
+        <field name="name">Customer Interest</field>
+        <field name="model">res.partner.interest</field>
+        <field name="arch" type="xml">
+            <form string="Interest">
+                <group>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <field name="color"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="res_partner_interest_tree" model="ir.ui.view">
+        <field name="name">Customer Interest Tree</field>
+        <field name="model">res.partner.interest</field>
+        <field name="arch" type="xml">
+            <tree string="Interests">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="res_partner_interest_search" model="ir.ui.view">
+        <field name="name">Customer Interest Search</field>
+        <field name="model">res.partner.interest</field>
+        <field name="arch" type="xml">
+            <search string="Search Interests">
+                <field name="name" string="Interest"/>
+           </search>
+        </field>
+    </record>
+
+    <record id="res_partner_interest_action" model="ir.actions.act_window">
+        <field name="name">Customer Interests</field>
+        <field name="res_model">res.partner.interest</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="res_partner_interest_search"/>
+    </record>
+
+</odoo>

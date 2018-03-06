@@ -1,0 +1,34 @@
+<odoo>
+
+    <record id="view_import_ljp_format" model="ir.ui.view">
+        <field name="name">import.ljp.format.form</field>
+        <field name="model">import.ljp.format</field>
+        <field name="arch" type="xml">
+            <form string="Format Import">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" default_focus="1" />
+                        </group>
+                        <group>
+                            <field name="delimiter" />
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="pos_descr" />
+                            <field name="pos_account" />
+                            <field name="pos_amount" />
+                        </group>
+                        <group>
+                            <field name="value_descr" />
+                            <field name="format_account" />
+                            <field name="format_amount" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

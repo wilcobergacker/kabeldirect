@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!--Company Tax Mapping Tree view -->
+        <record id="view_res_comapny_tax_mapping_tree" model="ir.ui.view">
+            <field name="name">res.company.tax.mapping.tree</field>
+            <field name="model">res.company.tax.mapping</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+            <tree string="Tax Configuration">
+                <field name="tax_name" required="True"/>
+                <field name="tax_percent" required="True"/>
+                <field name="account_tax_id" required="True"/>
+                <field name="company_id" invisible='1'/>
+            </tree>
+            </field>
+        </record>
+
+        <!-- Company Tax Mapping Form view -->
+        <record id="view_res_comapny_tax_mapping_form" model="ir.ui.view">
+            <field name="name">res.company.tax.mapping.form</field>
+            <field name="model">res.company.tax.mapping</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Tax Configuration">
+                    <group colspan="4">
+                        <field name="tax_name" required="True"/>
+                        <field name="account_tax_id" required="True"/>
+                        <field name="tax_percent" required="True"/>
+                        <field name="company_id" invisible='1'/>
+                    </group>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

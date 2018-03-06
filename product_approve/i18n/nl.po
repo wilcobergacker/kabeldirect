@@ -1,0 +1,65 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_approve
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-07 10:25+0000\n"
+"PO-Revision-Date: 2018-02-07 11:27+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: product_approve
+#: model:ir.ui.view,arch_db:product_approve.view_product_template_approve_inherit_form
+msgid "Approve"
+msgstr "Goedkeuren"
+
+#. module: product_approve
+#: selection:product.template,state:0
+msgid "Approved"
+msgstr "Goedgekeurd"
+
+#. module: product_approve
+#: selection:product.template,state:0
+msgid "Draft"
+msgstr "Concept"
+
+#. module: product_approve
+#: model:res.groups,name:product_approve.group_product_approve
+msgid "Product Approve"
+msgstr "Product goedkeuren"
+
+#. module: product_approve
+#: model:ir.model,name:product_approve.model_product_template
+msgid "Product Template"
+msgstr "Productsjabloon"
+
+#. module: product_approve
+#: model:ir.model.fields,field_description:product_approve.field_product_product_state
+#: model:ir.model.fields,field_description:product_approve.field_product_template_state
+msgid "Product state"
+msgstr "Product status"
+
+#. module: product_approve
+#: model:ir.model.fields,help:product_approve.field_product_product_state
+#: model:ir.model.fields,help:product_approve.field_product_template_state
+msgid "Product status."
+msgstr "Product status."
+
+#. module: product_approve
+#: model:ir.ui.view,arch_db:product_approve.view_product_template_approve_inherit_form
+msgid "Set to Draft"
+msgstr "Zet op concept"
+
+#. module: product_approve
+#: model:res.groups,comment:product_approve.group_product_approve
+msgid "Show button in product form view to approve product."
+msgstr "Laat knop op productformulier zien om product goed te keuren."

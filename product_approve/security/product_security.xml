@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="group_product_approve" model="res.groups">
+            <field name="name">Product Approve</field>
+            <field name="comment">Show button in product form view to approve product.</field>
+            <field name="category_id" ref="base.module_category_extra"/>
+        </record>
+    </data>
+</odoo>

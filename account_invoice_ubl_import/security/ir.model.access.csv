@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_receive_vendor_bill,access_receive_vendor_bill,model_receive_vendor_bill,,1,1,1,0
+access_receive_vendor_bill_manager,access_receive_vendor_bill_manager,model_receive_vendor_bill,account.group_account_manager,1,1,1,1
+access_receive_vendor_bill_line,access_receive_vendor_bill_line,model_receive_vendor_bill_line,,1,1,1,1
+access_res_company_tax_mapping,access_res_company_tax_mapping,model_res_company_tax_mapping,,1,1,1,1
+access_receive_vendor_bill_blacklist,access_receive_vendor_bill_blacklist,model_receive_vendor_bill_blacklist,,1,1,1,1
