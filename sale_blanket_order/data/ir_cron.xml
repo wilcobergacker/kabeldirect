@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2018 ACSONE SA/NV
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo noupdate="1">
+    <record id="expired_blanket_orders_cron" forcecreate='True' model="ir.cron">
+        <field name="name">Expire Blanket Orders</field>
+        <field eval="True" name="active"/>
+        <field name="user_id" ref="base.user_root"/>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="nextcall"
+               eval="(datetime.now() + relativedelta(hour=00, minute=1, second=00)).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="numbercall">-1</field>
+        <field name="model_id" ref="model_sale_blanket_order"/>
+        <field name="function">expire_orders</field>
+        <field name="args">()</field>
+    </record>
+</odoo>
